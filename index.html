@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <title>QR GEN</title>
+  </head>
+  <body>
+    <h1 class="flex justify-center text-4xl font-bold p-4">
+      Welcome To QR GEN
+    </h1>
+
+    <div class="p-4 text-center">
+      <label class="font-semibold">Enter URL:</label><br>
+      <input
+        type="url"
+        id="urlInput"
+        placeholder="https://example.com"
+        class="border p-2.5 rounded mt-2 w-7/12"
+      />
+      <br>
+      <button onclick="handleGenQRCode()" class="btn bg-blue-600 text-white p-3 rounded hover:bg-blue-400 m-5">GENARATE QR CODE</button>
+    </div>
+
+    <div id="QR-Code" class="w-[200px] mx-auto p-5">
+
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
